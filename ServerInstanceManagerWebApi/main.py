@@ -311,7 +311,7 @@ if __name__ == "__main__":
         os.mkdir(build_directory)
 
     try:
-        connection = mysql.connector.connect(host=config.Host, database=config.Database, user=config.Username,
+        connection = mysql.connector.connect(unix_socket=config.Socket, database=config.Database, user=config.Username,
                                              password=config.Password)
         cursor = connection.cursor(prepared=True)
         if connection.is_connected():

@@ -12,6 +12,7 @@ Debug = True  ### set this to false on live env because running debug is danger
 
 ### mysql connection
 Host = ""
+Socket = "/run/mysqld/mysqld.sock"
 Database = "vodkainstancemanager"
 Username = ""
 Password = ""
